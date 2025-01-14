@@ -1,7 +1,7 @@
 # java-assignment
 a series of questions answered in java programming language
 
-Questions Ansswered 
+Questions Answered 
 1. WRITE A JAVA PROGRAM TO PRINT OUT THE FLAG OF NIGERIA AS SHOWN IN THIS SLIDE (IGNORE THE WHITE BACKGROUND)
 2. WRITE A JAVA PROGRAM TO PRINT OUT THE FLAG OF NIGERIA AS SHOWN IN THIS SLIDE (IGNORE THE WHITE BACKGROUND). TO DO THIS, a. USE A SINGLE LOOP, b. USE A NESTED LOOP
 3. Consider an array that has the data shown below. Write a java program to do the following:
