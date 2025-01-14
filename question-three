@@ -1,0 +1,40 @@
+import java.util.Arrays;
+
+public class ArrayStatistics {
+    public static void main(String[] args) {
+        double[] data = {10, 20, 30, 40, 50, 60, 70};
+
+        double mean = calculateMean(data);
+        System.out.printf("Mean: %.2f%n", mean);
+
+        double median = calculateMedian(data);
+        System.out.printf("Median: %.2f%n", median);
+
+        double stdDev = calculateStandardDeviation(data, mean);
+        System.out.printf("Standard Deviation: %.2f%n", stdDev);
+    }
+
+    public static double calculateMean(double[] array) {
+        double sum = 0;
+        for (double value : array) {
+            sum += value;
+        }
+        return sum / array.length;
+    }
+    public static double calculateMedian(double[] array) {
+        Arrays.sort(array); 
+        int n = array.length;
+        if (n % 2 == 0) {
+            return (array[n / 2 - 1] + array[n / 2]) / 2.0;
+        } else {
+            return array[n / 2];
+        }
+    }
+    public static double calculateStandardDeviation(double[] array, double mean) {
+        double sumOfSquaredDifferences = 0;
+        for (double value : array) {
+            sumOfSquaredDifferences += Math.pow(value - mean, 2);
+        }
+        return Math.sqrt(sumOfSquaredDifferences / array.length);
+    }
+}
