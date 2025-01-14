@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class UserInputArray {
+    public static void main(String[] args) {
+        int[] numbers = new int[10];
+
+        Scanner scanner = new Scanner(System.in);
+
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.printf("Enter a value for index %d: ", i);
+            numbers[i] = scanner.nextInt(); 
+        }
+
+        System.out.println("\nYou entered:");
+        for (int number : numbers) {
+            System.out.println(number);
+        }
+       
+        scanner.close();
+    }
+}
