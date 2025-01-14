@@ -1,0 +1,24 @@
+public class NigerianFlagSingleLoop {
+    public static void main(String[] args) {
+        int rows = 7;    
+        int columns = 15; 
+
+        for (int i = 0; i < rows * columns; i++) { 
+            int row = i 
+            int column = i % columns;
+            
+           
+            if (column < columns / 3) {
+                System.out.print("*"); 
+            } else if (column < 2 * columns / 3) {
+                System.out.print("="); 
+            } else {
+                System.out.print("*");
+            }
+          
+            if (column == columns - 1) {
+                System.out.println();
+            }
+        }
+    }
+}
